@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="contents">
+        <h2>contents</h2>
+        <ul>
+            <li><a href="#colt">Colt Steele The Git & Github Bootcamp
+            </a></li>
+            <li><a href="#freecodecamp">FreeCodeCamp - Git and GitHub, a Crash Course.</a></li>
+        </ul>
+    </section>
+    <h1>My First Git</h1>
+    <section class="intro">
+        <p class="colt">OKay, this is my first git attempt.
+            I haven't yet downloaded git as I'm actually not sure how to. fun times. 
+            It is somewhat complicated. 
+            I'm watching a youtube from Colt Steele. You can see it <a href="https://www.youtube.com/watch?v=USjZcfj8yxE"><em>here</em></a>
+        </p>
+        <p class="whereimupto">
+            Right, so I've sort of learnt <em>what</em> git is - a version control system? yep, just had to go and double check that. 
+            It is a version control system. THe reason I emphasised <em>what</em> is because I currently have no idea <em>how</em> to use it.
+            It acts a repository for code from which changes can be made, creating branches of code that will not be implemented. THis allows us to work on
+            code without the risk of creating errors in the running code. 
+            Git is used to collaborate on projects too. 
+            Apparently it is essential when attempting to get a job as a junior dev. 
+            
+        </p>
+        <p class="notsureabout">
+            OKay, so currently I'm not sure about how to download git. Even the download requires us to make a decision about 
+            whether to use <a href="https://setapp.com/how-to/install-homebrew-on-mac">Homebrew</a>, 
+            <a href="https://www.macports.org/">Macports</a>  or <a href="https://developer.apple.com/xcode/">Xcode</a> 
+            I think I'm going to go with HOmebrew.
+            I'm actually getting a bit bogged down with this atm. 
+            I've just read that downloading Github will automatically down load git with a GUI (graphical User Interface) which would be a lot easier to use than 
+            the Command Line. However, Colt does say that learning the command line is a very good way of standing out from the crowd of other j-devs.
+        </p>
+        <h2>github</h2>
+        <p class="github">
+            Right, found a great article on this from career foundry. Find it <a href="https://careerfoundry.com/en/blog/web-development/what-is-github/"><em>here</em></a>
+            Also just read <a href="https://careerfoundry.com/en/blog/web-development/git-vs-github/">this</a> one
+        </p>
+    </section>
+<hr>
+    <section>
+        <h2>Using Git</h2>
+        <p>
+            Okay so I'm going to try and download git now and use it with the command line instead of the GUI. 
+            As stated above, using the command line is an important skill to learn as a dev.
+        </p>
+    </section>
+
+    <hr>
+    <section class="stuck">
+        <p>
+            Fuuuuck, I'm totally stuck right now. I went to download xcode and then saw that it was 12gb so i stopped the download. 
+            There must be a way to do this. 
+            OKay, I'm watching a FreeCodeCamp video <a href="https://www.youtube.com/watch?v=RGOj5yH7evk">here</a>
+
+            <ul>
+                <li>clone - Bring a repository that is hosted somewhere like Github into a folder on your local machine</li>
+                <li>add - track your files and changes in Git</li>
+                <li>commit - commit - save your files in Git</li>
+                <li>push - Upload Git commits to a remote repo, like Github</li>
+                <li>pull - Download the changes from remote repo to your local machine, the opposite of push</li>
+            </ul>
+        </p>
+        <p>
+            OKay, wow, I managed to make a small amount of progress. I've been doing this since 8am and it's now 12:40. 
+            I managed to install xcode's command line tools. 
+            It took a lot of googling. I googled "do i need to install xcode to install Git." I discovered I didn't need to and could just intal the tools.
+            For some reason I had to reboot the terminal in order for the promt i was giving to work. I'm saying promy but I'm not sure if that's the right word. 
+            Anyway, I realised that my version was using a % instead of a $ so I didn't need the $. Maybe that's what I was doing wrong. 
+            anyway, when I ran git --version it then said <em> "antonygregory-haase@Antonys-MBP ~ % git --version
+            xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+            "</em>
+            That actually gave me a bit of a buzz to see that something was happening. I then thought it was trying to download the whole xcode so didn't proceed. 
+            I then read an article on how to download jsut the command line tools and then realised that it was what I was already being promted to do. 
+            So I then downloaded and installed it. 
+            I then ran git --version again and it now says <em>"antonygregory-haase@Antonys-MBP ~ % git --version
+                git version 2.30.1 (Apple Git-130)" </em>
+            So I have version 2.30.1
+        </p>
+        <p>Faaack
+            I've managed to install Homebrew but it said to add something to my PAth?
+            I tried to follow the instructions --- 
+            
+            ==> Next steps:
+            - Run these two commands in your terminal to add Homebrew to your PATH:
+                echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/antonygregory-haase/.zprofile
+                eval "$(/opt/homebrew/bin/brew shellenv)"
+            - Run brew help to get started
+            - Further documentation:
+                https://docs.brew.sh
+
+            -- BUt then I think I've fucked up and now the terminal only displays "quote"
+
+            antonygregory-haase@Antonys-MBP ~ % eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/antonygregory-haase/.zprofile
+quote> eval "$(/opt/homebrew/bin/brew shellenv)"
+quote>  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/antonygregory-haase/.zprofile
+quote> 
+quote> 
+quote> 
+quote> clear
+quote> brew help
+quote> 
+
+okay, I've managed to get out of it with control+c
+I've ran brew install git and I think. Yep, looks like I've done it. I jsut tried to upgrade git and it says that it's already installed the latest one. 
+I'm a little conccenred that I haven't added brew to the path, whatever that is.
+For now I'll move on and see if I can now use Git. 
+It's only taken me from 8am, and a 1 hour stint from 4am to 5am, until now (13:15).
+Sheeeeshhhh
+</p>
+<p>
+    Just clearning up my tabs from last night and this morning and seeing how i got to learning about version control, git and github. 
+    I started off trying to figure out how to upload and publish my html and css files so that they can act as an online document of my 
+    progress. 
+    I was looking at FTP which stands for file transfer protocol, I think. I wanted to upload them to wordpress. 
+    I didn't go down that route but I think at somepoint I will go back to it and get on with wordpress. 
+    Ah yes, just opened a tab with gitHub Pages on it. That's what got me to learn Git. Well, got me to start learning Git. 
+</p>
+<p>
+    RIght so I'm working my way through <a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners"><em>THIS</em></a> HubSpot intro to Git and GitHub.
+    Inside the above article is another good article on how to use the terminal <a href="https://ubuntu.com/tutorials/command-line-for-beginners#3-opening-a-terminal"><em>here</em></a>
+</p>
+<p>It's now Saturday Morning. 7am. I'm going through Colt Steele's intro <a href="https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049" target="blank"><em>HERE</em></a>
+<a href="https://www.youtube.com/watch?v=USjZcfj8yxE" target="blank">this is the accompanying video</a>
+<ul>
+    <h5>heed</h5>
+    <li>to show the hidden folders and files in finder use command+shift+.(period)</li>
+</ul>
+OKay, so far I have <ol>
+                    <li>setup Git using "git --version"</li>
+                    <li>configured name and email using... <ul>
+                        <li>git config --global user.name "Your Name"</li>
+                        <li>git config --global user.email "your@email.com"</li>
+                    </ul>
+                </li>
+                <li>Created a local repository</li>
+                <li>initialised a repository using "git init"</li>
+                <li>checked the status of the repository by using "git status"<ul>
+                    <li>we ca add the untracked project files to the <b>staging area</b> based on the information from the <span>git status</span></li>
+                    <li>At a later point, <span>git status</span> will report any modifications that we made to our tracked files before we decide to add them to the staging area again.</li>
+                </ul></li>
+                </ol>
+    </p>
+    <p>Now we are <h4><em>staging and committing code</em></h4>
+    committing is the process in which the changes are <em>'officially'</em> added to the Git repository.
+    Commits are usually created at logical points as we develop our project, 
+    usually after adding in specific contents, features or modification 
+    (like new functionalities or bug fixes, for example).
+    </p>
+        </section>
+        <section class="staging">
+            <h3>staging files</h3>
+            <p>
+                From the project folder, we can use the <b>git add</b> command to add our files to the staging area, which allows them to be tracked. 
+            </p>
+            <p>
+                WE can add a specific file to the staging area with the following command:
+                <span id="gitstage">git add file.js</span>
+            </p>
+            <p>
+                To add multiple files, we can do this:
+                <span id="gitstage">git add file.js file2.js file3.js</span>
+            </p>
+            <p>
+                Instead of having to add the files individually, we can also add all the files inside the project folder to the staging area:
+                <span id="gitstage">git add .</span>
+                by default this adds <b>all the files and folders</b> inside the project folder to the staging area, 
+                from where they are ready to be commited and tracked.
+            </p>
+            <p>OKay so I'm going to try and stage my first file. It'll be this one so I just need to run the command 
+                <b>git add myfirstgit.html</b> to the terminal. Let's see what happens. Fingers crossed!
+            </p>
+            <p>wow. That went well. It came back with <em>fatal: pathspec 'myfirstgit.html' did not match any files</em></p>
+            <p>Why does it not match any files???</p>
+            <p>I'm going to watch the video to see if there's any clues there.</p>
+            <p>right, so I had to run <em>touch myfirstgit.html to create a new file</em></p>
+            <p>now we have to type <em>git status</em> and it should say there is an untracked file with the name myfirstgit.html
+            let's see.</p>
+            <p>right so i did the touch thing and I can see the file. I have to add it. However, I think i need to add the folder that is holding this file (the one you're reading)
+                Nope.
+            </p>
+            <p>
+                OKay so I've added the bloody file to the staging area. The new myfirstgit.html file. I'm going to have to change the name of this file.
+                I've vhanged this to myfirstgit2.html
+            </p>
+            <p>This is what I see now when i run git status</p>
+            <p>
+                antonygregory-haase@Antonys-MBP ~ % git status
+                warning: could not open directory '.Trash/': Operation not permitted
+                On branch master
+                
+                No commits yet
+                
+                Changes to be committed:
+                  (use "git rm --cached <file>..." to unstage)
+                    new file:   myfirstgit.html
+                
+                </p>
+                <p>Now I have to commit</p>
+
+        </section>
+        <section class="makecommit">
+            <h3>making commits</h3>
+            <p>COlt says to use the git commit -m "commit message"</p>
+            <p>it came back with</p>
+            <p>antonygregory-haase@Antonys-MBP ~ % git commit -m "first ever commit"
+                [master (root-commit) 0ddd135] first ever commit
+                 1 file changed, 0 insertions(+), 0 deletions(-)
+                 create mode 100644 myfirstgit.html
+                antonygregory-haase@Antonys-MBP ~ % </p>
+                <p>which is pretty much what it say's on colts. Colt then runs git status again. Colt's says working tree clean. 
+                    I need to figure out how to clean my working tree as I have a bunch of stuff on there. 
+                </p>
+                <p>now we run git log and I get back</p>
+                <p>antonygregory-haase@Antonys-MBP ~ % git log
+                    commit 0ddd1351395e4c5a6d2803f4a5bf5f49ddae75d1 (HEAD -> master)
+                    Author: Antony Gregory-Haase <antonygregoryhaase@gmail.com>
+                    Date:   Sat Mar 5 08:23:10 2022 +0000
+                    
+                        first ever commit
+                    antonygregory-haase@Antonys-MBP ~ % 
+                    </p>
+        </section>
+        <section>
+            <p>OKay, Colt now opens the new file up in VSCode. Let me see if I can do that.</p>
+            <p>okay so I've opened this up in VS code and added in the html that I was working on.
+                THis is now the html file I created through Git.
+                So now if I go and check the status it should say that this has been modified.
+            </p>
+            <p>okay yes it says - 	modified:   myfirstgit.html and we then run git add myfirstgit.html and it turns green, puts it in the staging area.
+            </p>
+            <p>antonygregory-haase@Antonys-MBP ~ % git log
+                commit 0ddd1351395e4c5a6d2803f4a5bf5f49ddae75d1 (HEAD -> master)
+                Author: Antony Gregory-Haase <antonygregoryhaase@gmail.com>
+                Date:   Sat Mar 5 08:23:10 2022 +0000
+                
+                    first ever commit
+                antonygregory-haase@Antonys-MBP ~ % git commit -m "second commit now with html added"
+                [master 06e6543] second commit now with html added
+                 1 file changed, 237 insertions(+)
+                antonygregory-haase@Antonys-MBP ~ % 
+                </p>
+                <p>I committed the new additions to the HTML file and it sent me back the above message</p>
+        </section>
+        <section>
+            <p>time and date - Sunday 6th MArch 2022 430am</p>
+            <p>Let's check if GIT RECOGNISEs these changes by using git status. TESTING</p>
+            <p>testing</p>
+            <p>testing again</p>
+            <p></p>
+        </section>
+        <section>
+            <p>
+                Little update. right, I'm reading the documentation on <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" target="blank">git-scm</a> git-scm
+                Sitting in the Bell. Sunday 430pm. Not suer about some of the stuff I've been reading, but on the whole it's stuff I have already done on the Colt thing.
+                One thing I've not really seen in the "blob" whatever the fuck that is. No idea. Had a google but not really telling me much at them mo. 
+                I'll come back to that. Right it stands fo binary large object. The Git blob is the object type used to store the 
+                contents of each file in a repository. 
+                Okay so the blob is where the file is stored and the tree is the directory that the blob is stored in. Seems simple enough. 
+            </p>
+
+        </section>
+        <section>
+            <h3>Branches??</h3>
+            <p>Right, I'm going to have to dedicate this bit to trying to figure out what branches are as I actually have no idea.</p>
+            <p>OKay so I'm back home now. TIme is 9:25pm.
+                I'm reading <a href="https://docs.github.com/en/get-started/quickstart/hello-world" target="blank">this document on github</a> which seems to have a decent 
+                explanation on branches. After a good talk on branches it talks about Opening a pull request.
+                It says <blockquote>Now that you have changes in a branch off of <em>main</em>, you can open a pull request.
+                <p>Pull requests are the heart of collaboration on GITHUB. hen you open a pull request, you're
+                    proposing your chnages and requesting that someone review and pull in your contribution and merge them into 
+                    their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, addition, and subtractions are shown in different 
+                    colours. 
+                    <p>As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.</p>
+                      <p>By using GITHUB's @mention feature in your pull request message, you can ask for feedback from specific people or teams, 
+                          whether they're down the hall or 10 time zones away.
+                      </p>
+                      <p>You can even open pull requests in your own repository and merge them yourself.
+                          It's a great way to learn the GitHub flow before working on larger projects.
+                      </p>
+                </p></blockquote>
+            </p>
+            <ol>
+                <li>Click the <b>Pull requests</b> tab of your repository</li>
+                <li>Click <b>New pull request</b></li>
+                <li>In the <b>example comparisons</b> box, select the branch you made, <em>readme-edits</em>, to compare with <em>main</em> (the original)</li>
+                <li>Look over your changes in the diffs on the <em>compare</em> page, make sure they're what you want to submit.</li>
+                <li>Click Create pull request</li>
+                <li>Give you pull request a title and write a brief description of your changes. 
+                    You can include emojis and drag and drop images and gifs.
+                </li>
+                <li>Optionally, to the right of your title and description, click the cog next to <b>reviewers</b>.
+                <b>assignees, Projects, or milestones</b> to add any of these options to your pull request. 
+            You do not need to add any yet, but these options offer different ways to collaborate using pull requests. 
+        FOr more information, see "<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="blank">About pull requests</a>"</li>
+                <li>Click <b>create pull request</b>.</li>
+            </ol>
+        <p>YOur collaborators can now review your edits and make suggestions.</p>
+        </section>
+
+        <section>
+            <h2>Where I'm learning from</h2>
+            <p>
+                I've joined Colt Steele's class on Git and Github. I think I'll create a section for 
+                that learning. I'll add in a clickable content list at the top of this page with a link to this section.
+            </p>
+        </section>
+
+        <section id="colt">
+            <h2>Colt Steele - The Git & Github Bootcamp</h2>
+            <p>
+                Right, at the moment I've already done much of the first 4 to 5 sections of bootcamp. 
+                I will go through them though just a s a recap to make sure I've taken it all in and to pick up any tricks that Colt might have. 
+            </p>
+        </section>
+
+        <section id="freecodecamp">
+            <h2>Free Code Camp - Git and GitHub for Beginners, a Crash Course</h2>
+            <p><a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="blank">See the video on YouTube</a></p>
+            <p>Really good resource here. I've managed to do much of what is in the video already. 
+                I had the video playing yesterday as I tidied my room and there is a section on 
+                the key that allows us to link Git to GitHUb. That's actually where I've managed to get up to in my 
+                learning Git so that part of the video will be very useful. 
+                OKay, I'm going to try and figure out how to do this now then. 
+                Time now is 0713 Tuesday 8th March.
+            </p>
+            <p>
+                Let's do a quick recap of the terms.
+                <h3>terms</h3>
+                <ul>
+                    <li>Directory -> Folder</li>
+                    <li>Terminal or Command Line -> INterface for Text Commands </li>
+                    <li> CLI -> Command Line Interface</li>
+                    <li>cd -> Change Directory</li>
+                    <li>Code Editor -> what I'm using to write this</li>
+                    <li>repository -> Project, or the folder/place where your project is kept</li>
+                    <li>GitHub -> A website to host your repositories online</li>
+                </ul>
+                <p>Cool, so I actually already know what all of these are. My studies haven't just been going over my head.</p>
+            </p>
+            <p>
+                <h3>Git Commands</h3>
+                <ul>
+                    <li>clone -> Bring a repositoy that is hosted somewhere like Github into a folder on your local machine</li>
+                    <li>add -> Track your files in Git</li>
+                    <li>commit -> Save your files in Git</li>
+                    <li>push -> Upload Git commits to a remote repo, like GitHub</li>
+                    <li>pull -> Download changes from remote repo to your local machine, the opposite of push</li>
+                    
+                </ul>
+                <p>Okay, so I have used add and commit. I have tried to use clone but I need to link my Git and GitHub.
+                    And the same applies for push and pull. I can't complete these actions until I have linked the two.
+                    The reason I'm rewatching this video is because there was a decent explanation of how to link the two later on.
+                </p>
+            </p>
+        </section>
+        <section>
+            <p>Next there is an explanation of how to open a new GitHub account. I've already done this. 
+                Then there is an example of how to create a new repo on GH. Something I've already done. 
+            </p>
+            <p>Actually, the set up is not as simple as shown on the video. GH gives you certain steps to follow to init a new repo. HOwever on the video 
+                it is just a new repo that she is creating on an already set up account. 
+            </p>
+            <p>Right, I've skipped forwards a but as I've already set up Git and GitHub. 
+                I haven't yet set up VSCode for Git though, I'll try and follow the video and do that now. 
+
+            </p>
+            <p>Actually, no I need to go back and follow the set up ahaaaa!! </p>
+            <p>Okay, it's now 0750, I've been awake since 0530 and I'm now starting to feel sleepy. Nooo. 
+                So I'm gonna try and smash through this bit here and then I'll go for a little walk around the block. Or to the shop as I need some chammomile tea or something.
+            </p>
+            <p><h3>demo-repo</h3>
+            OKay, so we 
+            <ul>
+                <li>create a new repo</li>
+                <li>Give it a name (demo repo)</li>
+                <li>write description</li>
+                <li>Click, create repo</li>
+                <p>on the next screen we have the quick set up screen where we can create our files and 
+                    folders locally on the command line or create them on the github website. 
+                    <li>We create a README.md</li>  
+                    <ul>
+                    <li>What is the README? The most basic file that you will find within almost every project - it contains text 
+                        to describe what the project is about, what it does and any other relevent information. README.md - the md stands for markdown.
+                    </li></ul>
+                    <p>we click on create a new file on the new github screen. We put in README.md. 
+                        Narrator then says that markdown has lots of shortcuts. One of which is # which is a header. 
+                        So she writes # Demo on the 1st ine and and then "some description" on line 3.
+                    </p>
+                </p>
+                <p>We then look at the commit new file section lower down the page an the placeholder text.
+                    If nothing is written here then it will use the placeholder text.
+
+                    We commit the new file. Cool.
+                </p>
+                    <blockquote>
+                        <p>Right, so becasue we named it the README.md file then github always shows it as the default file. 
+                            We then click on the "edit this file" link. She changes the full stop at the end of "some description" to an exclamation point. 
+                            IN the commit changes dialogue box it now says "update README.md". Ohhh yeahhh!
+                        </p>
+                        <p>If we want to see the entire history of changes then we can click on commits. HEre we can see each commits unique identifier. 
+                            Took a second to see that as the layout has changed a little since the video was uploaded in 2020. 
+                            In the original createREADME.md it shows what lines were added in green. 
+                            
+                        </p>
+                        <p>IN the updated commit it shows what has been added and deleted. </p>
+                    </blockquote>
+                    <p>NOw we move on to installing Git on your local machine which I've already done</p>
+        </section>
+        
+        <section>
+            <h2>Using VSCode with Git and SHH Keys</h2>
+            <blockquote>
+                <p>OKay, next we're on to VSCODE. More specifically we are going to pull the repo taht we created at the beginning of the tutorial.</p>
+                <p>We start off by creating a new folder in VSCode.  </p>
+                <p>Actually, before that we have to create the SHH key. I think we do this through the terminal???
+                    really not sure at this point. 
+                </p>
+                <p>Right, we "generate the key locally" which probably means using the terminal. </p>
+                <p>WHat is typed into the terminal?</p>
+                <p>We type the ssh-keygen command into the terminal. I looked at the Github documentation to find out how to do the rest (copy the key and create a new key in GitHub) as the video is outdated.</p>
+                <p>The only thing left ot do is to make sure that your local Git command line interface knows about the key you just generated</p>
+            </blockquote>
+
+            <blockquote>
+                <h3>ssh-agent</h3>
+                <p>  Right. I <em>think</em> that I've done this. I followed the video as well as <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">the information on here</a>.
+                 How can I test if it's worked? Try and use it I guess. The next section in the video is git push so let's see if it works. Oh wait, actually, the video seems to be back to front and earlier we tried to pull
+                but it wouldn't work if there was no connection. I've done that now so I should be able to do that command into the VSCode terminal. </p> 
+            </blockquote>
+        </section>
+
+        <section>
+                <h3>git clone</h3>
+                    <p>
+                        Okay, I have no idea why in the video she does a git clone before we set up the SHH key. So confusing to do it that way. 
+                        We have to go to the repo that we created in github and click on the green "code" button next to go to file and add file. 
+                        in the drop down menu select SHH and copy. Mine says "git@github.com:AGregoryHaase/demo-repo.git"
+                        We run git clone git@github.com:AGregoryHaase/demo-repo.git in the VSCode terminal.
+                    </p>
+                    <p>
+                        I've done the above and received the following
+                    </p>
+                <blockquote>
+                    <p> 
+                        antonygregory-haase@Antonys-MBP git % git clone git@github.com:AGregoryHaase/demo-repo.git
+                        Cloning into 'demo-repo'...
+                        The authenticity of host 'github.com (140.82.121.3)' can't be established.
+                        ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+                        Are you sure you want to continue connecting (yes/no/[fingerprint])?
+                    </p>
+                    <p> 
+                        I think maybe I'm not linking to the right folder. Is it folder specific?
+                    </p> 
+                    <p> 
+                        OH my days, I've managed to do it. Found the fix <a href="https://gist.github.com/vikpe/34454d69fe03a9617f2b009cc3ba200b" target="blank">here</a>
+                        I've managed to clone the repo from github that we created earlier. 
+                        I've been sat here since 0530. It's now 1500. Rach did come round and watch a film but I was 
+                        working while it was on. I did sort of follow it.
+                    </p>
+                </blockquote>
+
+                <blockquote>
+                    <h3>Git Push</h3>
+                    <p>Blummin nora I managed to do it. I created a new file in VSCode and edited an existing file that I'd pulled down from 
+                        github and then pushed them to GITHUB. Bloody only took me 4 days! Made up I've managed to do it.
+                        Hopefully soon I can get on with pushing my code to GitHub and then to pages to create webpages and have my code viewable for other people to see. 
+                        Future employers hopefully. 
+                    </p>
+                </blockquote>
+                
+        </section>
+
+
+</body>
+</html>
